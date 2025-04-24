@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.logo {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 140px 0;
+}
+
+input {
+    width: 400px;
+    padding: 15px 50px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    background: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) no-repeat,
+        url(../css/img/search.svg) no-repeat;
+    background-size: 23px;
+    background-position: right 15px center, left 15px center;
+}
+
+input:focus {
+    box-shadow: 2px 3px 4px 2px #ccc;
+    outline: none;
+}
+
+.input-search {
+    padding-top: 20px;
+}
+
+.btn-container {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #5f6368;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #f8f8f8;
+}
+
+body.dark-mode .btn {
+    background-color: #333;
+    color: #ccc;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #444;
+}
+
+.language-selection {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.language-selection a {
+    text-decoration: none;
+    color: #777;
+    margin: 0 5px;
+}
+
+body.dark-mode .language-selection a {
+    color: #ccc;
+}
+
+.language-selection a:hover {
+    color: #5f6368;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
+
+body.dark-mode .footer {
+    color: #ccc;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #777;
+    margin: 0 10px;
+}
+
+body.dark-mode .footer-links a {
+    color: #ccc;
+}
+
+.footer-links a:hover {
+    color: #5f6368;
+}
+
+.footer-location {
+    margin-top: 10px;
+}
+
+.mode-toggle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mode-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+body.dark-mode .mode-btn {
+    background-color: #333;
+    color: #ccc;
+}
+
+body.dark-mode .mode-btn:hover {
+    background-color: #444;
+}
+
+#mode-icon {
+    font-size: 20px;
+    color: #ffcc00; /* Default sun color */
+}
+
+body.dark-mode #mode-icon {
+    color: #fff; /* Moon color when in dark mode */
+}
